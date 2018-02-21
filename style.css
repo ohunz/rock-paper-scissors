@@ -1,0 +1,64 @@
+body {
+	min-width: 1200px;
+	background-color: #990000;
+	font-family: Roboto;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	font-size: 60px;
+	letter-spacing: 7px;	
+	font-weight: bold;
+	margin-top: 30px
+}
+
+p {
+	color: white;
+	font-size: 30px;
+}
+
+.weapon {
+	height: 200px;
+	width: 300px;
+	float: left;
+	margin: 30px;
+	border: 2px solid	#990000;
+}
+
+.all_weapons {
+	overflow: hidden;
+	display: inline-block;
+}
+
+.game {
+	/*border: 1px solid black;*/
+	overflow: hidden;
+}
+
+.user_choice, .computer_choice, .winner {
+	display: inline-block;
+}
+
+.user_choice {
+	float: left;
+	text-align: center;
+	margin-left: 75px;
+}
+
+.computer_choice {
+	float:right;
+	text-align: center;
+	margin-right: 75px;
+}
+
+.name {
+	margin-top: 50%;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.all_weapons .weapon:hover {
+	border: 2px solid white;
+	background-color: blue;
+}
