@@ -7,7 +7,7 @@ body {
 
 h1 {
 	color: white;
-	font-size: 60px;
+	font-size: 50px;
 	letter-spacing: 7px;	
 	font-weight: bold;
 	margin-top: 30px
@@ -32,29 +32,30 @@ p {
 	display: inline-block;
 }
 
-.game {
+#game {
 	overflow: hidden;
+	visibility: hidden;
 }
 
-.user_choice, .computer_choice, .winner {
+#user_choice, #computer_choice, .winner {
 	display: inline-block;
 }
 
-.user_choice {
+#user_choice {
 	float: left;
 	text-align: center;
 	margin-left: 10%;
 }
 
-.computer_choice {
+#computer_choice {
 	float:right;
 	text-align: center;
 	margin-right: 10%;
 }
 
-.name, .score {
-	margin-top: 10%;
-	font-size: 50px;
+#winner, #score {
+	margin-top: 30%;
+	font-size: 40px;
 	font-weight: bold;
 }
 

@@ -9,24 +9,25 @@
 <body>
 	<h1>Select your weapon</h1>
 	<div class="all_weapons">
-		<img class="weapon" src="./images/rock.png" alt="Rock">
-		<img class="weapon" src="./images/paper.png" alt="Paper">
-		<img class="weapon" src="./images/scissors.png" alt="Scissors">
+		<img id="rock" class="weapon" src="./images/rock.png" alt="Rock" onclick="playRound('Rock', computerPlay())">
+		<img id="paper" class="weapon" src="./images/paper.png" alt="Paper" onclick="playRound('Paper', computerPlay())">
+		<img id="scissors" class="weapon" src="./images/scissors.png" alt="Scissors" onclick="playRound('Scissors', computerPlay())">
 	</div>
-	<div class="game">
-		<div class="user_choice">
+	<div id="game">
+		<div id="user_choice">
 			<p>You chose:</p>
-			<img class="weapon" src="./images/rock.png" alt="Rock">
+			<img id="player_weapon" class="weapon" src="" alt="Player weapon">
 		</div>
 		<div class="winner">
 			<p>The winner is:</p>
-			<p class="name">Who?</p>
-			<p class="score">0:0<p>
+			<p id="winner">Who?</p>
+			<p id="score">0 - 0<p>
 		</div>
-		<div class="computer_choice">
+		<div id="computer_choice">
 			<p>Computer chose:</p>
-			<img class="weapon" src="./images/rock.png" alt="Rock">
+			<img id="computer_weapon" class="weapon" src="" alt="Computer weapon">
 		</div>
 	</div>
+	<script src="rock-paper-scissors.js"></script>
 </body>
 </html>
